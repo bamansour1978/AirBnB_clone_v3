@@ -41,7 +41,7 @@ def teardown_db(exception):
 @app.errorhandler(404)
 def handle_404(exception):
     """
-    handles 404 errors, in the event that global error handler fails
+    B & L handles 404 errors, in the event that global error handler fails
     """
     code = exception.__str__().split()[0]
     description = exception.description
