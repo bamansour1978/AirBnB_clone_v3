@@ -20,7 +20,7 @@ def status():
 @app_views.route('/stats', methods=['GET'])
 def stats():
     """
-    function to return the count of all class objects
+    function that return the count of all class objects
     """
     if request.method == 'GET':
         response = {}
